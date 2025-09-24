@@ -76,13 +76,13 @@
 // }
 
 // 6번
-int main(void)
-{
-    int *p, i, j=20;
-    void *v;
-
-    v =&j;
-    i = *(int *)v + 10;
-    printf("%d\n", i);
-    return 0;
-}
+// int main(void)
+// {
+//     int *p, i, j=20;
+//     void *v;
+//
+//     v =&j;
+//     i = *(int *)v + 10;
+//     printf("%d\n", i);
+//     return 0;
+// }
