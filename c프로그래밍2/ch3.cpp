@@ -77,5 +77,23 @@
 //6번
 // int main(void)
 // {
-//
+//     int point[] = {3,4,7,9,10};
+//     int aryLength = sizeof(point)/sizeof(int);
+//     int sum = 0;
+//     for(int i=0; i<aryLength; i++)
+//     {
+//         sum += *(point++);
+//     }
+//     printf("%d\n",sum);
+//     return 0;
+// }
+
+// 7번
+// int main(void)
+// {
+//     int a[]={1,2,3,4,5};
+//     int *p=a;
+//     printf("%d %d %d %d\n", sizeof(a), sizeof(a[0]), sizeof(p), sizeof(p[1]));
+//     printf("%d %d %d %d\n", *a, *p, a[0], p[0]);
+//     printf("%d %d %u %u\n", *(a+1), *(p+1), a+1, p+1);
 // }
