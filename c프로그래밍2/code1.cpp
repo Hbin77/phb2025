@@ -7,6 +7,9 @@
 //     size = sizeof(grade) / sizeof(grade[0]);
 //     for (i = 0; i < size; i++)
 //         printf("grade[%d] = %d\n",i, grade[i]);
+//     printf("size = %d\n", size);
+//     printf("sizeof(grade) = %d\n", sizeof(grade));
+//     printf("sizeof(grade[0]) = %d\n", sizeof(grade[0]));
 //     return 0;
 // }
 
@@ -56,6 +59,26 @@
 // void copy_array(char a[]);
 // int main(void)
 // {
+//     char a[N] = "Hello"; // 6글자 이상시 오류
+//     int i;
+//     copy_array(a);
+//     return 0;
+// }
+// void copy_array(char a[])
+// {
+//     char b[N];
+//      for (int i = 0; i < N; i++)
+//          b[i] = a[i];
+//      printf("원본 배열 a: %s\n", a);
+//      printf("복사된 배열 b: %s\n", b);
+// }
+
+// 6번
+// #include <string.h>
+// #define N 6
+// void copy_array(char a[]);
+// int main(void)
+// {
 //     char a[N] = "Hello";
 //     int i;
 //     copy_array(a);
@@ -64,27 +87,7 @@
 // void copy_array(char a[])
 // {
 //     char b[N];
-//     for (int i = 0; i < N; i++)
-//         b[i] = a[i];
+//     strcpy(b, a);
 //     printf("원본 배열 a: %s\n", a);
 //     printf("복사된 배열 b: %s\n", b);
 // }
-
-// 6번
-#include <string.h>
-#define N 6
-void copy_array(char a[]);
-int main(void)
-{
-    char a[N] = "Hello";
-    int i;
-    copy_array(a);
-    return 0;
-}
-void copy_array(char a[])
-{
-    char b[N];
-    strcpy(b, a);
-    printf("원본 배열 a: %s\n", a);
-    printf("복사된 배열 b: %s\n", b);
-}
