@@ -1,6 +1,5 @@
-// 1번
 #include <stdio.h>
-//
+//1번
 // void f(int *a);
 // int main(void)
 // {
@@ -30,4 +29,11 @@
 //     printf("%d\n", (*(a+1))[1]);
 //     printf("%d\n", *(a[1] +2));
 //     return 0;
+// }
+
+//3번
+// int main(void)
+// {
+//     char *p[6] = {"abc","defg","hi","jklmno","pqrstuvw","xyz"};
+//     printf("%c %c %s %c %s %c %c", **p, *p[1], p[2], *(p[1] +2), *((p+1)+1), *(*(p+1)+2),*(*(p+4)+2));
 // }
