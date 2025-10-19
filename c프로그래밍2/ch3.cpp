@@ -21,7 +21,7 @@
 //     return 0;
 // }
 
-//2번
+//3번
 // int main(void)
 // {
 //     int x = 6;
@@ -37,7 +37,7 @@
 //     printf("%d\n",*p++);
 // }
 
-//3번
+//4번
 // void change_it(int[]);
 // int main(void)
 // {
