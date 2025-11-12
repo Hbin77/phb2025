@@ -20,22 +20,29 @@
 //
 //     return 0;
 // }
+//
+// 3번
+ int main(void)
+{
+      int x = 6;
+      int *p = &x;
+      int j[2][5]={{1, 2, 3, 4, 5},{6,7,8,9,10}};
+      int *q = j[0];
+      printf("%d\n",x);
+      printf("%d\n",++(*p));
+      x=6;
+      printf("%d\n",++*p);
+      x=6;
+      printf("%d\n",(*p)++);
+      x=6;
+      printf("%d\n",*p++);
+      printf("%d\n",*q);
+      printf("%d\n",(*q)++);
+     printf("%d\n",*q++);
+     printf("%d",&j);
 
-//3번
-// int main(void)
-// {
-//     int x = 6;
-//     int *p = &x;
-//     printf("%d\n",x);
-//     printf("%u\n",&x);
-//     printf("%d\n",++(*p));
-//     x=6;
-//     printf("%d\n",++*p);
-//     x=6;
-//     printf("%d\n",(*p)++);
-//     x=6;
-//     printf("%d\n",*p++);
-// }
+    return 0;
+}
 
 //4번
 // void change_it(int[]);
